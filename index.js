@@ -1,9 +1,16 @@
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
+import expo from 'expo';
 
 const App = () => {
-	return( <Header headerText={"Thuc Anh dang yeu"} /> );
+  return(
+    <View>
+      <Header headerText={'Thuc Anh dang yeu'} />
+      <AlbumList />
+    </View>
+  );
 };
 
 AppRegistry.registerComponent('main', () => App);
