@@ -7,7 +7,7 @@ import expo from 'expo';
 const App = () => {
   return(
     <View>
-      <Header headerText={'Thuc Anh dang yeu'} />
+      <Header headerText={'Sample'} />
       <AlbumList />
     </View>
   );

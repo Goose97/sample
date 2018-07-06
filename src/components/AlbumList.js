@@ -7,8 +7,7 @@ class AlbumList extends Component {
     axios.get('http://rallycoding.herokuapp.com/api/music_albums')
       .then(response => console.log('aaaaa'));
   }
-
-
+  
   render() {
     return(
       <View>
