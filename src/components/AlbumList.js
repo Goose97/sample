@@ -1,13 +1,21 @@
-import React from 'react';
-import { view, Text} from 'react-native';
+import React, { Component } from 'react';
+import { View, Text} from 'react-native';
+import axios from 'axios';
 
 class AlbumList extends Component {
-render(){
-	return (
-		<view>
-			<Text>aaaa</Text>
-		</view>
-	);
+  componentWillMount() {
+    axios.get('http://rallycoding.herokuapp.com/api/music_albums')
+      .then(response => console.log('aaaaa'));
+  }
+
+
+  render() {
+    return(
+      <View>
+        <Text>1234</Text>
+      </View>
+    );
+  }
 }
 
-} 
+export default AlbumList;
